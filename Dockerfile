@@ -5,15 +5,6 @@ FROM elixir:latest
 WORKDIR /opt/neebu_experience
 
 # Configure required environment
-ARG neo_user
-ARG neo_password
-ARG mix_cookie
-ARG neo_port
-
-ENV NEO_USER=$neo_user
-ENV NEO_PASSWORD=$neo_password
-ENV NEO_PORT=$neo_port
-ENV MIX_COOKIE=$mix_cookie
 ENV MIX_ENV prod
 
 # Install hex (Elixir package manager)
