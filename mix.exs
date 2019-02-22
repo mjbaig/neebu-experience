@@ -22,7 +22,10 @@ defmodule NeebuExperience.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:bolt_sips, "~> 1.2.0-rc2"}
+      {:bolt_sips, "~> 1.2.0-rc2"},
+      {:poison, "~> 3.1"},
+      {:cowboy, "~> 1.1.2"},
+      {:plug, "~> 1.3.4"},
     ]
   end
 end
