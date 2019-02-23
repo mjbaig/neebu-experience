@@ -17,7 +17,7 @@ defmodule App do
 
   def children do
     [
-      Plug.Adapters.Cowboy.child_spec(:http, NeebuExperience.Routes, [], port: 8080)
+      Plug.Adapters.Cowboy.child_spec(scheme: :http, plug: NeebuExperience.Routes, options: [port: 8080])
     ]
   end
 

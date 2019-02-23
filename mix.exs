@@ -22,10 +22,13 @@ defmodule NeebuExperience.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:bolt_sips, "~> 1.2.0-rc2"},
+      {:bolt_sips, "~> 1.2.1-rc2"},
       {:poison, "~> 3.1"},
-      {:cowboy, "~> 1.1.2"},
-      {:plug, "~> 1.3.4"},
+      {:plug_cowboy, "~> 2.0.1"},
+      {:plug, "~> 1.4"},
+      {:argon2_elixir, "~> 1.2"},
+      {:comeonin, "~> 4.0"},
+      {:authtoken, "~> 0.2"},
     ]
   end
 end
